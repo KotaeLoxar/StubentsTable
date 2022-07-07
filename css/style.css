@@ -1,0 +1,59 @@
+.main-header {
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 25px;
+}
+
+.form-block {
+	padding-left: 50px;
+	margin-bottom: 50px;
+}
+
+.form__input {
+	display: block;
+	max-width: 300px;
+}
+
+.form__input:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.table-name {
+	margin-bottom: 25px;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+	margin-right: 100px;
+	margin-bottom: 20px;
+}
+
+.btn4 {
+	margin-bottom: 20px;
+}
+
+.container {
+	margin: 0;
+	padding-left: 50px;
+	margin-bottom: 200px;
+}
+
+.filters {
+	padding: 0 50px;
+	margin-bottom: 50px;
+}
+
+.input-filter {
+	display: block;
+	min-width: 450px;
+	max-width: 500px;
+}
+
+.input-filter:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.input {
+	margin-bottom: 10px;
+}

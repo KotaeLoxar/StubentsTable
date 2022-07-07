@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Панель управления студентами</title>
+</head>
+<body>
+<h1 class="main-header">Панель управления студентами</h1>
+<div class="blocks">
+	<div class="form-block">
+		<h2 class="form-header">Форма добавления нового студента</h2>
+		<form id="form" class="form" action="#" method="get">
+			<div class="input">
+				<input id="input-name" class="form__input form-control" type="text" placeholder="Имя">
+			</div>
+			<div class="input">
+				<input id="input-surname" class="form__input form-control" type="text" placeholder="Фамилия">
+			</div>
+			<div class="input">
+				<input id="input-lastname" class="form__input form-control" type="text" placeholder="Отчество">
+			</div>
+			<div class="input">
+				<input id="input-birth-date" class="form__input form-control birth" type="date" placeholder="Дата рождения"
+				       max="2022-04-18">
+			</div>
+			<div class="input">
+				<input id="input-start-year" class="form__input form-control" type="number" placeholder="Год начала обучения">
+			</div>
+			<div class="input">
+				<input id="input-faculty" class="form__input form-control" type="text" placeholder="Факультет">
+			</div>
+			<button class="form__btn btn btn-secondary">Добавить студента</button>
+		</form>
+	</div>
+	
+	<div class="filters">
+		<h2>Фильтры</h2>
+		<input id="filter-fio" class="form-control input-filter" type="text"
+		       placeholder="ФИО для поиска подстроки в фамилии, имени или отчестве">
+		<input id="filter-faculty" class="form-control input-filter" type="text"
+		       placeholder="Факультет для поиска подстроки в названии факультета">
+		<input id="filter-start-year" class="form-control input-filter" type="text"
+		       placeholder="Год начала обучения (точное совпадение)">
+		<input id="filter-finish-year" class="form-control input-filter" type="text"
+		       placeholder="Год окончания обучения (точное совпадение)">
+	</div>
+</div>
+
+<section class="main">
+	<div class="container">
+		<h2 class="table-name">Студенты</h2>
+		<table id="table-students" class="table table-striped table-hover">
+			<thead>
+				<th>ФИО студента</th>
+				<button class="btn1 btn btn-primary">Сортировать по ФИО</button>
+				<th>Факультет</th>
+				<button class="btn2 btn btn-primary">Сортировать по факультету</button>
+				<th>Дата рождения и возраст</th>
+				<button class="btn3 btn btn-primary">Сортировать по возрасту</button>
+				<th>Годы обучения и номер курса</th>
+				<button class="btn4 btn btn-primary">Сортировать по годам обучения</button>
+			</thead>
+			<tbody id="students-list">
+			
+			</tbody>
+		</table>
+	</div>
+</section>
+
+<script defer src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+<script defer src="js/script.js"></script>
+</body>
+</html>
